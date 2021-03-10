@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.city {
+	style.display="none";
+}
+</style>
+</head>
+<body>
+<button type="button" onclick="fun()">click me!</button>
+<h1 class="city">London</h1>
+<p>London is capital of england</p>
+<h1 class="city">Tokyo</h1>
+<p>Tokyo is capital of Japan</p>
+<script>
+function fun(){
+var x = document.getElementByclassName("city");
+for(var i=0;i<x.length;i++)
+	{
+	x[i].style.display="none";
+	}
+}
+</script>
+</body>
+</html>

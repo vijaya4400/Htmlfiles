@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id = "demo"></p>
+<script>
+try{
+	const car = {name:"creta",model:"500",color:"red"};
+	//car = {name:"bmw",model:"600",color:"white"};
+	car.color="white";
+	document.getElementById('demo').innerHTML=car.name+" is one of the beautiful car with "+car.color;
+}
+catch(err)
+{
+	document.getElementById('demo').innerHTML=err.name;
+	}
+</script>
+</body>
+</html>

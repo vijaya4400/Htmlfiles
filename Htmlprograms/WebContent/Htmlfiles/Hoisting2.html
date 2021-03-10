@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id = "demo"></p>
+<script>
+try{
+	let carName;
+	carName="creta";
+	//let carName;
+	document.getElementById('demo').innerHTML=carName;
+}
+catch(err)
+{
+	document.getElementById('demo').innerHTML=err.name+" "+err.message;
+	}
+</script>
+</body>
+</html>
